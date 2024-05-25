@@ -18,20 +18,27 @@ TechCart is a comprehensive e-commerce platform designed to facilitate a seamles
 To install and run TechCart, follow these steps:
 
 1. Clone the repository:
-   
+   ```
    git clone https://github.com/lecodebyjean/techcart.git
    cd techcart
-
+   ```
 3. Install the required dependencies:
-   \`\`\`sh
-   pip install -r requirements.txt
-   \`\`\`
+   ```
+   pip3 install -r requirements.txt
+   ```
 
 
 4. Run the application:
-   \`\`\`sh
-   python main.py
-   \`\`\`
+
+      As a Customer:
+      ```
+      python main.py
+     ```
+
+      As an Admin:
+      ```
+      python3 -m API.inventory_api
+      ```
 
 ## Usage
 
