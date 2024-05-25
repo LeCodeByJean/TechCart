@@ -6,7 +6,7 @@ TechCart is a simple e-commerce platform designed to facilitate a secure shoppin
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](## usage)
+- [Usage](#usage)
 - [Features](#features)
 - [Security](#Security)
 - [Data Validation](#data-validation)
@@ -54,34 +54,34 @@ TechCart offers a command-line interface (CLI) for users to interact with the pl
 ### Example Commands
 
 1. Register a new user:
-   \`\`\`sh
+   ```
    python main.py register
-   \`\`\`
+   ```
 
 2. Log in as an existing user:
-   \`\`\`sh
+   ```
    python main.py login
-   \`\`\`
+   ```
 
 3. Browse products:
-   \`\`\`sh
+   ```
    python main.py view-items
-   \`\`\`
+   ```
 
 4. Add an item to the cart:
-   \`\`\`sh
+   ```
    python main.py add-to-cart
-   \`\`\`
+   ```
 
 5. View the cart:
-   \`\`\`sh
+   ```
    python main.py view-cart
-   \`\`\`
+   ```
 
 6. Checkout and place an order:
-   \`\`\`sh
+   ```
    python main.py checkout
-   \`\`\`
+   ```
 
 ## Features
 
