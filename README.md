@@ -20,7 +20,7 @@ Follow the instructions from the CLI to the CRUD inventory.
 
 This is a test with a GIF for demonstration of testing:
 
-![](https://i.ibb.co/ZzC5BRj/ezgif-7-cd6c87b8f2.gif)
+![]((https://i.ibb.co/Nr5bkyr/Screen-Recording-2024-05-25-at-2.gif))
 
 ##For the user CLI:
 
