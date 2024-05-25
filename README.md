@@ -18,6 +18,9 @@ First, install the requirements.txt with the command:
 note: Let the terminal with the server open during the use of CLI.
 Follow the instrcutions from the CLI to CRUD inventory.
 
+This is a test with a GIF for demonstration of testing:
+
+![alt tag](https://ibb.co/wh1VSZk)
 
 ##For the user CLI:
 
