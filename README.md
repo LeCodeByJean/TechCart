@@ -1,11 +1,11 @@
-MOST UP TO DATE VERSION
+# MOST UP TO DATE VERSION
 
 First, install the requirements.txt with the command: 
 
     pip3 install -r requirements.txt
 
 
-##For the admin API inventory management:
+##  For the admin API inventory management:
 
 1-From the root TechCart, load the flask server with the command:
 
