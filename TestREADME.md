@@ -1,14 +1,14 @@
 
-# TechCart
+# TechCart 🛒
 
-TechCart is a comprehensive e-commerce platform designed to facilitate a seamless shopping experience for users. This application includes features such as user registration, login, product browsing, shopping cart management, and order placement. The platform emphasizes security, data validation, and thorough testing to ensure reliability and robustness.
+TechCart is a simple e-commerce platform designed to facilitate a secure shopping experience for users. This application includes features such as user registration, login, product browsing, shopping cart management, and order placement. The platform emphasizes security, data validation, and thorough testing to ensure reliability and robustness.
 
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
+- [Usage](## usage)
 - [Features](#features)
-- [Security](#security)
+- [Security](#Security)
 - [Data Validation](#data-validation)
 - [Testing](#testing)
 - [Future Implementations](#future-implementations)
