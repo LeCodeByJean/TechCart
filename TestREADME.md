@@ -19,7 +19,7 @@ TechCart is a simple e-commerce platform designed to facilitate a secure shoppin
 - [Security Focus](#security-focus)
 - [Data Validation](#data-validation)
 - [Testing](#testing)
-- [Future Implementations](#future-implementations)
+- [Potential Future Implementations](#potential-future-implementations)
 
 ## Installation
 
@@ -117,7 +117,8 @@ TechCart implements several security features to protect user data and ensure se
 
 ### Password Management
 
-- **Salted Password Hashing**: Passwords are hashed using SHA-256 with a unique salt for each user. This prevents attackers from using precomputed hashes to crack passwords.
+- **Salted Password Hashing**: Passwords are hashed using SHA-256 with a unique salt for each user. This prevents attackers from using precomputed hashes to crack passwords. The use of salt in password encryption significantly enhances security by mitigating the risk of precomputed hash attacks, such as dictionary attacks. Salt adds random data to the passwords before hashing, increasing the complexity and uniqueness of the encrypted passwords. This method ensures that even if the same password is used by different users, the resulting hash values will be different, making it harder for attackers to crack the passwords (Ebanesar & Suganthi, 2019).
+- 
 - **Strong Password Requirements**: Passwords must be at least 8 characters long and include a mix of upper and lower case letters, digits, and special characters.
 
 ### Two-Factor Authentication (2FA)
@@ -174,7 +175,7 @@ TechCart includes a comprehensive suite of tests to ensure the correctness and r
 3. **Shopping Cart**: Test adding, updating, and removing items from the cart.
 4. **Order Placement**: Test the order placement process, including payment validation.
 
-## Future Implementations
+## Potential Future Implementations
 
 TechCart aims to continuously improve and expand its features. Potential future implementations include:
 
@@ -201,3 +202,8 @@ TechCart aims to continuously improve and expand its features. Potential future 
 ## Conclusion
 
 TechCart is a robust and secure e-commerce platform designed to provide users with a seamless shopping experience. With its comprehensive features, stringent security measures, and thorough testing, TechCart ensures reliability and user satisfaction. Future implementations aim to enhance the platform's capabilities and user experience, making TechCart a leading solution in the e-commerce space.
+
+
+## References
+
+Ebanesar, T. and Suganthi, G. (2019). Improving Login Process by Salted Hashing Password Using SHA-256 Algorithm in Web Applications. International Journal of Computer Sciences and Engineering, 7(3), pp.27–32. doi:https://doi.org/10.26438/ijcse/v7i3.2732.
