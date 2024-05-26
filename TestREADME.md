@@ -42,11 +42,13 @@ To install and run TechCart, follow these steps:
 
       ### As a Customer:
       From the root TechCart, run:
+      
       ```
       python3 main.py
-     ```
+      ```
 
       ### As an Administrator:
+      
       ```
       python3 -m API.inventory_api
       ```
@@ -227,5 +229,5 @@ Ebanesar, T. and Suganthi, G. (2019). Improving Login Process by Salted Hashing 
 
 <ul>
 <li>Gif from videos done with https://www.veed.io/convert/video-to-gif</li>
-Media stored and linked with https://www.imgbb.com</li>
+<li>Media stored and linked with https://www.imgbb.com</li>
 </ul>
