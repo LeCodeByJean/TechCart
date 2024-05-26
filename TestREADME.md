@@ -215,17 +215,15 @@ TechCart aims to continuously improve and expand its features. Potential future 
   ### Enhanced User Experience
   
   - **Graphical User Interface (GUI)**: Develop a user-friendly GUI to replace the CLI, making it easier for users to interact with the platform.
-  - **Mobile App**: Create a mobile application to provide users with on-the-go access to TechCart.
-  
-  ### Advanced Features
-  
+  - **Mobile App**: Create a mobile application to provide users with on-the-go access to TechCart.  
   - **Wishlist**: Allow users to create and manage wishlists for products they are interested in purchasing later.
   - **Recommendations**: Implement a recommendation engine to suggest products based on user behaviour and preferences.
   
-  ### Improved Security
+  ### Improved Security and data validation
   
   - **OAuth Integration**: Integrate OAuth for secure third-party authentication, allowing users to log in using their existing social media accounts.
   - **Advanced Fraud Detection**: Implement machine learning algorithms to detect and prevent fraudulent transactions.
+  - **Credit Card Validation**: Implement the Luhn Algorithm (Modulus 10 Algorithm) to validate credit card numbers.
   
   ### Scalability and Performance
   
