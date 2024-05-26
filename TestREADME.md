@@ -1,3 +1,9 @@
+<div style="text-align: right;">
+  University of Essex Online<br>
+  Module: Secure Software Development (SSD)<br>
+  Tutor: Dr Cathryn Peoples<br>
+  Student: Jean-G. De Souza
+</div>
 
 # TechCart 🛒
 
@@ -10,7 +16,7 @@ TechCart is a simple e-commerce platform designed to facilitate a secure shoppin
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Security](#security)
+- [Security Focus](#security-focus)
 - [Data Validation](#data-validation)
 - [Testing](#testing)
 - [Future Implementations](#future-implementations)
@@ -104,7 +110,8 @@ TechCart offers a command-line interface (CLI) for users to interact with the pl
 - **Order Creation**: When a user places an order, the system creates an order record, processes the payment, and updates stock quantities.
 - **Order Tracking**: Users can view the status of their orders and receive updates as the status changes.
 
-## Security
+
+## Security Focus
 
 TechCart implements several security features to protect user data and ensure secure transactions:
 
