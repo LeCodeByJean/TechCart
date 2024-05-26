@@ -34,12 +34,12 @@ two factor authentication after 3 failed attempts
 user' data encryption
 user's password hashed with 256 and added salt
 user's credit card info hashed with 256 and added salt
-Rate limit by user for cart manipulation to avoid Denial of Servie attacks
+Rate limit by user for cart manipulation to avoid Denial of Service (DoS) attacks
 Rate Limite for API use
 
 Future improuvements:
 
-Implement the 'Luhn Algorithm' ('Modulus 10 Algorithm') for credit card number validation
+Implement the 'Luhn Algorithm' ('Modulus 10 Algorithm') for credit card number validation.
 
 Disclaimer:
 This software is not affiliated with, endorsed by, or related to TechCart LTD or the website techcart.com.
