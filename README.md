@@ -9,7 +9,7 @@
 
 <h6 align="left">Word Count: xxxx</h6>
 
-TechCart is a simple e-commerce platform designed to facilitate a secure shopping experience for users. This application includes features such as user registration, login, guest browsing (no account), shopping cart management, and order placement. The platform emphasizes security, data validation, and thorough testing to ensure reliability and robustness.
+TechCart is a simple e-commerce platform designed to offer users a secure shopping experience. This application includes features such as user registration, login, guest browsing (no account needed), shopping cart management, payment, and order placement. TechCart also includes an API for inventory management, allowing administrators to create, read, update, and delete (CRUD) products. It was developed with an emphasis on security, data validation, and thorough testing to ensure reliability and robustness.
 
 
 ## Table of Contents
@@ -73,48 +73,57 @@ This is a test with a GIF for demonstration of testing: @changeBefore
 ![@changeBefore](https://i.ibb.co/Nr5bkyr/Screen-Recording-2024-05-25-at-2.gif)
 
 
-## Usage
+## Usage as a Customer
 
 TechCart offers a command-line interface (CLI) for users to interact with the platform. The main functionalities available through the CLI include:
 
-- Registering a new user
 - Logging in as an existing user
-- Browsing available products
-- Adding items to the shopping cart
+- Registering as a new user
+- Browsing available products as a guest
+- Browsing available products as a logged-in user
+- Shopping cart management (add or delete items from it)
 - Viewing and managing the shopping cart
+- Paying (simulation)
 - Placing an order
 
-  ### Example Commands
+  ### Example Use Cases
   
-  1. Register a new user:
-     ```
-     python3 main.py register
-     ```
-  
-  2. Log in as an existing user:
-     ```
-     python3 main.py login
-     ```
-  
-  3. Browse products:
-     ```
-     python3 main.py view-items
-     ```
-  
-  4. Add an item to the cart:
-     ```
-     python3 main.py add-to-cart
-     ```
-  
-  5. View the cart:
-     ```
-     python3 main.py view-cart
-     ```
-  
-  6. Checkout and place an order:
-     ```
-     python3 main.py checkout
-     ```
+**Register a New User**
+  To enable all functionalities of the TechCart platform, you need to be a registered customer. This process will create a new account:
+
+   ```sh
+   python3 main.py
+   ```
+
+   After launching the CLI, select the option to create an account:
+   - Choose option `2. Create an account`
+   - Follow the prompts to enter your username, email, and a strong password as per the requirements.
+   - The registration process will directly lead you to the logged-in menu with access to more available options.
+
+**Login as an Existing User**
+  If you already have an account, you can login to access the programme features such as managing your cart, and placing orders.
+
+   ```sh
+   python3 main.py
+   ```
+
+   After launching the CLI, select the option to log in:
+   - Choose option `1. Login`
+   - Follow the prompts to enter your username and password.
+    (only 3 attempts before the two-factor authentication process is launched)
+    - The Login process will lead you to the logged-in menu with access to more available options.
+
+3. **Browse as a Guest User**
+   If you do not have an account and do not wish to create one, you can browse the products available on the platform as a guest user.
+
+   ```sh
+   python3 main.py
+   ```
+
+   After launching the CLI, select the option to browse as a guest:
+   - Choose option `3. Browse as a guest`
+   - You can view the available products and their details.
+
 
 
 ## Features
@@ -247,4 +256,5 @@ Ebanesar, T. and Suganthi, G. (2019). Improving Login Process by Salted Hashing 
 <ul>
 <li>Gif from videos done with https://www.veed.io/convert/video-to-gif</li>
 <li>Media stored and linked with https://www.imgbb.com</li>
+<li>README formatting inspired by: https://github.com/RichardLitt/standard-readme?tab=readme-ov-file</li>
 </ul>
