@@ -40,18 +40,35 @@ To install and run TechCart, follow these steps:
 
 ## Run the application:
 
-      ### As a Customer:
+  ### As a Customer:
+  
       From the root TechCart, run:
       
       ```
       python3 main.py
       ```
 
-      ### As an Administrator:
+  ### As an Administrator:
+  
+    1-From the root TechCart, load the flask server:
       
       ```
       python3 -m API.inventory_api
       ```
+
+    2-In a second terminal (still in the root TechCart), access the API CLI:
+
+    python3 API/api_cli.py
+
+  Follow the instructions from the CLI to the CRUD inventory.
+  
+  note: Let the terminal with the server open during the use of CLI.
+
+
+
+This is a test with a GIF for demonstration of testing:
+
+![](https://i.ibb.co/Nr5bkyr/Screen-Recording-2024-05-25-at-2.gif)
 
 
 ## Usage
