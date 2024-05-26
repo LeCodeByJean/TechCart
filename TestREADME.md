@@ -7,9 +7,9 @@
 
 # TechCart 🛒
 
-<h6 align="center">Word Count: xxxx</h6>
+<h6 align="left">Word Count: xxxx</h6>
 
-TechCart is a simple e-commerce platform designed to facilitate a secure shopping experience for users. This application includes features such as user registration, login, product browsing, shopping cart management, and order placement. The platform emphasizes security, data validation, and thorough testing to ensure reliability and robustness.
+TechCart is a simple e-commerce platform designed to facilitate a secure shopping experience for users. This application includes features such as user registration, login, guest browsing (no account), shopping cart management, and order placement. The platform emphasizes security, data validation, and thorough testing to ensure reliability and robustness.
 
 ## Table of Contents
 
@@ -36,14 +36,15 @@ To install and run TechCart, follow these steps:
    ```
 
 
-4. Run the application:
+## Run the application:
 
-      As a Customer:
+      ### As a Customer:
+      From the root TechCart, run:
       ```
-      python main.py
+      python3 main.py
      ```
 
-      As an Admin:
+      ### As an Administrator:
       ```
       python3 -m API.inventory_api
       ```
@@ -63,32 +64,32 @@ TechCart offers a command-line interface (CLI) for users to interact with the pl
 
 1. Register a new user:
    ```
-   python main.py register
+   python3 main.py register
    ```
 
 2. Log in as an existing user:
    ```
-   python main.py login
+   python3 main.py login
    ```
 
 3. Browse products:
    ```
-   python main.py view-items
+   python3 main.py view-items
    ```
 
 4. Add an item to the cart:
    ```
-   python main.py add-to-cart
+   python3 main.py add-to-cart
    ```
 
 5. View the cart:
    ```
-   python main.py view-cart
+   python3 main.py view-cart
    ```
 
 6. Checkout and place an order:
    ```
-   python main.py checkout
+   python3 main.py checkout
    ```
 
 ## Features
@@ -187,7 +188,7 @@ TechCart aims to continuously improve and expand its features. Potential future 
 ### Advanced Features
 
 - **Wishlist**: Allow users to create and manage wishlists for products they are interested in purchasing later.
-- **Recommendations**: Implement a recommendation engine to suggest products based on user behavior and preferences.
+- **Recommendations**: Implement a recommendation engine to suggest products based on user behaviour and preferences.
 
 ### Improved Security
 
@@ -207,3 +208,9 @@ TechCart is a robust and secure e-commerce platform designed to provide users wi
 ## References
 
 Ebanesar, T. and Suganthi, G. (2019). Improving Login Process by Salted Hashing Password Using SHA-256 Algorithm in Web Applications. International Journal of Computer Sciences and Engineering, 7(3), pp.27–32. doi:https://doi.org/10.26438/ijcse/v7i3.2732.
+
+
+## credits
+
+-Gif from videos done with https://www.veed.io/convert/video-to-gif
+-Media stored and linked with https://www.imgbb.com
