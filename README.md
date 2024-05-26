@@ -38,9 +38,10 @@ To install and run TechCart, follow these steps:
    ```
 
 
-## Run the application:
+## As a Customer:
 
-  ### As a Customer:
+
+  ### Run the Application:
   
   From the root TechCart, run:
       
@@ -48,7 +49,67 @@ To install and run TechCart, follow these steps:
   python3 main.py
   ```
 
-  ### As an Administrator:
+  ### Usage
+
+TechCart offers a command-line interface (CLI) for users to interact with the platform. The main functionalities available through the CLI include:
+
+- Logging in as an existing user
+- Registering as a new user
+- Browsing available products as a guest
+- Browsing available products as a logged-in user
+- Shopping cart management (add or delete items from it)
+- Viewing and managing the shopping cart
+- Placing an order
+- Paying (simulation)
+
+This is a test with a GIF for demonstration of testing: @changeBefore
+
+![@changeBefore](https://i.ibb.co/Nr5bkyr/Screen-Recording-2024-05-25-at-2.gif)
+
+  ### Example Use Cases
+  
+**Register a New User**
+  To enable all functionalities of the TechCart platform, you must be a registered customer. This process will create a new account:
+
+   ```sh
+   python3 main.py
+   ```
+
+   After launching the CLI, select the option to create an account:
+   - Choose option `2. Create an account`
+   - Follow the prompts to enter your username, email, and a strong password as per the requirements.
+   - The registration process will directly lead you to the logged-in menu with access to all available options.
+
+**Login as an Existing User**
+  If you already have an account, you can log in to access the programme features, such as managing your cart and placing orders:
+
+   ```sh
+   python3 main.py
+   ```
+
+   After launching the CLI, select the option to log in:
+   - Choose option `1. Login`
+   - Follow the prompts to enter your username and password.
+    (only 3 attempts before the two-factor authentication process is launched)
+    - The Login process will lead you to the logged-in menu with access to all available options.
+
+**Browse as a Guest User**
+   If you do not have an account and do not wish to create one, you can browse the products available on the platform as a guest user.
+
+   ```sh
+   python3 main.py
+   ```
+
+   After launching the CLI, select the option to browse as a guest:
+   - Choose option `3. Browse as a guest`
+   - You can then choose `1. View our available items` to view the available products and their details.
+
+
+## As an Administrator:
+
+Creating an API was a requirement for this project, and implementing it specifically for the inventory management system is a strategic decision that ensures scalability and future-proofing by preparing the system for future integration with Enterprise Resource Planning (ERP) systems like SAP or Oracle. The API allows for efficient interoperability between the inventory management system and external systems like an ERP. This not only facilitates automation and real-time data synchronization but also enables the app to easily adapt to evolving business needs.
+
+  ### Run the Application:
   
   1-From the root TechCart, load the flask server:
       
@@ -66,63 +127,28 @@ To install and run TechCart, follow these steps:
   
   Note: The terminal with the flask server must remain open while using CLI.
 
+  ### Usage
 
+The inventory management CLI provides a simple interface for administrators to manage the inventory using the API endpoints. This CLI allows you to perform various actions:
+
+  - Retrieve and display all products in the inventory.
+  - Retrieve and display detailed information for a specific product.
+  - Add a new product to the inventory.
+  - Update the details of an existing product.
+  - Remove a product from the inventory.
+
+The CLI interacts with the API endpoints using the `requests` library, sending and receiving data in JSON format. The base URL for the API is `http://127.0.0.1:5000/api`.
 
 This is a test with a GIF for demonstration of testing: @changeBefore
 
 ![@changeBefore](https://i.ibb.co/Nr5bkyr/Screen-Recording-2024-05-25-at-2.gif)
 
+### Example Use Cases
 
-## Usage as a Customer
 
-TechCart offers a command-line interface (CLI) for users to interact with the platform. The main functionalities available through the CLI include:
 
-- Logging in as an existing user
-- Registering as a new user
-- Browsing available products as a guest
-- Browsing available products as a logged-in user
-- Shopping cart management (add or delete items from it)
-- Viewing and managing the shopping cart
-- Paying (simulation)
-- Placing an order
 
-  ### Example Use Cases
-  
-**Register a New User**
-  To enable all functionalities of the TechCart platform, you need to be a registered customer. This process will create a new account:
 
-   ```sh
-   python3 main.py
-   ```
-
-   After launching the CLI, select the option to create an account:
-   - Choose option `2. Create an account`
-   - Follow the prompts to enter your username, email, and a strong password as per the requirements.
-   - The registration process will directly lead you to the logged-in menu with access to more available options.
-
-**Login as an Existing User**
-  If you already have an account, you can login to access the programme features such as managing your cart, and placing orders.
-
-   ```sh
-   python3 main.py
-   ```
-
-   After launching the CLI, select the option to log in:
-   - Choose option `1. Login`
-   - Follow the prompts to enter your username and password.
-    (only 3 attempts before the two-factor authentication process is launched)
-    - The Login process will lead you to the logged-in menu with access to more available options.
-
-3. **Browse as a Guest User**
-   If you do not have an account and do not wish to create one, you can browse the products available on the platform as a guest user.
-
-   ```sh
-   python3 main.py
-   ```
-
-   After launching the CLI, select the option to browse as a guest:
-   - Choose option `3. Browse as a guest`
-   - You can view the available products and their details.
 
 
 
