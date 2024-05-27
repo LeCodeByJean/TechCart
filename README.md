@@ -17,11 +17,11 @@ TechCart is a simple e-commerce platform designed to offer users a secure shoppi
 - [Installation](#installation)
 - [Customer Usage](#customer-usage)
 - [Administrator Usage](#administrator-usage)
-- [Features](#features)
-- [Security Focus](#security-focus)
-- [Data Validation](#data-validation)
+- [Security Features](#security-features)
 - [Testing](#testing)
-- [Potential Future Implementations](#potential-future-implementations)
+- [Weakness and Potential Implementations](#weakness-and-potential-implementations)
+- [References](#references)
+- [Credits](#credits)
 
 
 ## Installation
@@ -225,7 +225,7 @@ This project includes a complete suite of tests to ensure the correctness and re
   - **Encryption Testing**: Tests for data encryption and decryption to ensure sensitive data is protected.
   
 
-## Weakness and Potential Future Implementations:
+## Weakness and Potential Implementations:
   
   ### Improved Security and data validation
 
