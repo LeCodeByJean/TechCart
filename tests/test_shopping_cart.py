@@ -8,7 +8,7 @@ from unittest import mock
 from unittest.mock import MagicMock
 from data.shopping_cart import add_item_to_cart, view_cart, clear_cart
 
-# Mocking the user_db and product_db modules
+# Simulate the user_db and product_db modules
 @pytest.fixture(autouse=True)
 def mock_db():
     with mock.patch('data.shopping_cart.get_user') as mock_get_user, \

@@ -25,8 +25,8 @@ Safety focus:
         dictionary attacks or rainbow table attacks to crack the passwords.
 """
 
-import hashlib # Secure Hash Algorithm Library 256-bit
-import uuid # Universal Unique Identifier
+import hashlib # Secure 256-bit Hash Algorithm Library
+import uuid # Universal Unique Identifier used for salting here
 from utility.logger import setup_logger
 
 # Initialize the logger

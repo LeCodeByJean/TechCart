@@ -9,7 +9,7 @@ def test_generate_salt():
     salt = generate_salt()
     assert isinstance(salt, str)
     assert len(salt) == 32  # UUID4 hex string length is 32
-#"secure_password"
+
 def test_hash_password():
     salt = generate_salt()
     password = "Aa12345!"

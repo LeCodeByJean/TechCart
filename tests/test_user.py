@@ -3,14 +3,14 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import pytest
 from unittest.mock import patch
-from data.user import User  # Replace with the actual path to your User class module
+from data.user import User
 
 # Sample data for tests
 username = "UserTest"
-email = "test@email.com"
-clear_password = "StrongPassw0rd!"
+email = "user@email.com"
+clear_password = "Aa12345!"
 role = "customer"
-salt = "somesalt"
+salt = "randomsalt123"
 password_hash = "hashedpassword"
 encrypted_email = b"encryptedemail"
 encrypted_user_key = b"encrypteduserkey"
@@ -37,12 +37,12 @@ def test_user_creation(mock_security):
     assert user.encrypted_user_key == encrypted_user_key
 
 def test_validate_email():
-    assert User.validate_email("valid.email@example.com")
-    assert not User.validate_email("invalid-email")
+    assert User.validate_email("user@email.com")
+    assert not User.validate_email("invalid.email.com")
 
 def test_validate_password_strength():
-    assert User.validate_password_strength("StrongPassw0rd!")
-    assert not User.validate_password_strength("weakpass")
+    assert User.validate_password_strength("Aa12345!")
+    assert not User.validate_password_strength("weak")
 
 def test_verify_password(mock_security):
     user = User.create(username, email, clear_password, role)

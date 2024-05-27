@@ -17,7 +17,7 @@ def setup_and_teardown():
     if os.path.exists(MASTER_KEY_PATH):
         os.remove(MASTER_KEY_PATH)
     yield
-    # Teardown: Remove master key file if it was created during tests
+    #Teardown: Remove master key file if it was created during tests
     if os.path.exists(MASTER_KEY_PATH):
         os.remove(MASTER_KEY_PATH)
 
