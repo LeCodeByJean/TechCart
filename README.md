@@ -198,81 +198,42 @@ In the CLI:
   
   - **API Rate Limiting**: To prevent abuse and protect against denial-of-service attacks, the system limits the number of requests from a single IP address. The default limit is 200 requests per day and 50 requests per hour.
 
-
-
-## Data Validation
-
-Data validation is crucial to ensure the integrity and reliability of the system. TechCart employs various validation techniques:
-
-  ### Email Validation
+  ### Data Validation
   
-  - **Format Checking**: The system validates the format of email addresses during registration to ensure they conform to standard email address formats.
+  - **Email Format Checking**: The system validates the format of email addresses during registration to ensure they conform to standard email address formats.
   
-  ### Password Validation
-  
-  - **Strength Checking**: Passwords are checked to ensure they meet the required strength criteria, including length and character diversity.
-  
-  ### Input Sanitization
-  
-  - **Sanitization**: User inputs are sanitized to prevent injection attacks and ensure that data stored in the database is clean and safe.
-
+  - **Password Strength Checking**: Passwords are checked to ensure they meet the required strength criteria, including length and character diversity.
 
 
 ## Testing
 
-TechCart includes a comprehensive suite of tests to ensure the correctness and reliability of the system. The tests cover various aspects of the application, including:
+This project includes a complete suite of tests to ensure the correctness and reliability of the system. The tests cover various aspects of the programme:
 
   ### Unit Tests
   
   - **Functionality Testing**: Tests for individual functions and methods to ensure they perform as expected.
-  - **Boundary Testing**: Tests for edge cases and boundary conditions to ensure the system handles them gracefully.
+  - **Boundary Testing**: Tests for edge cases and boundary conditions to ensure the system handles them.
   
   ### Integration Tests
   
   - **Module Interactions**: Tests for interactions between different modules to ensure they work together correctly.
-  - **Data Flow**: Tests for data flow between modules, including user authentication, shopping cart management, and order processing.
+  - **Data Flow**: Tests for data flow between modules.
   
   ### Security Tests
   
   - **Authentication Testing**: Tests for the authentication process, including 2FA and rate limiting.
   - **Encryption Testing**: Tests for data encryption and decryption to ensure sensitive data is protected.
   
-  ### Example Test Cases
-  
-  1. **User Registration**: Test the registration process with valid and invalid inputs.
-  2. **Login Attempts**: Test login attempts with correct and incorrect credentials, including triggering 2FA.
-  3. **Shopping Cart**: Test adding, updating, and removing items from the cart.
-  4. **Order Placement**: Test the order placement process, including payment validation.
 
-
-
-## Potential Future Implementations
-
-TechCart aims to continuously improve and expand its features. Potential future implementations include:
-
-  ### Enhanced User Experience
-  
-  - **Graphical User Interface (GUI)**: Develop a user-friendly GUI to replace the CLI, making it easier for users to interact with the platform.
-  - **Mobile App**: Create a mobile application to provide users with on-the-go access to TechCart.  
-  - **Wishlist**: Allow users to create and manage wishlists for products they are interested in purchasing later.
-  - **Recommendations**: Implement a recommendation engine to suggest products based on user behaviour and preferences.
+## Weakness and Potential Future Implementations:
   
   ### Improved Security and data validation
-  
-  - **OAuth Integration**: Integrate OAuth for secure third-party authentication, allowing users to log in using their existing social media accounts.
-  - **Advanced Fraud Detection**: Implement machine learning algorithms to detect and prevent fraudulent transactions.
+
+  - **API authentication Integration**: Integrate an authentication layer in the API to ensure secure access control.
   - **Credit Card Validation**: Implement the Luhn Algorithm (Modulus 10 Algorithm) to validate credit card numbers.
-  
-  ### Scalability and Performance
-  
-  - **Database Optimization**: Optimize database queries and indexing to improve performance and scalability.
-  - **Load Balancing**: Implement load balancing to distribute traffic across multiple servers, ensuring high availability and reliability.
-
-
-
-## Conclusion
-
-TechCart is a robust and secure e-commerce platform designed to provide users with a seamless shopping experience. With its comprehensive features, stringent security measures, and thorough testing, TechCart ensures reliability and user satisfaction. Future implementations aim to enhance the platform's capabilities and user experience, making TechCart a leading solution in the e-commerce space.
+  - **OAuth Integration**: Integrate OAuth for secure third-party authentication, allowing users to log in using their existing social media accounts.
+  - **Secure API Connection**: Encrypt data transmission to ensure secure API connection (https).
+  - **Persistent Database**: Deploy a persistent database like SQL for robust data management, ensuring data persistence and integrity. (The usage of a permanent database was discouraged for this assignment)
 
 
 ## References
