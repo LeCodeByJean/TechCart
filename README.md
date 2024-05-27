@@ -67,7 +67,7 @@ TechCart offers a command-line interface (CLI) for users to interact with the pl
 
 Illustration:
 
-![@changeBefore](https://i.ibb.co/Nr5bkyr/Screen-Recording-2024-05-25-at-2.gif)
+![Customer usage of main](https://i.ibb.co/YcLndpF/Main.gif)
 
   ### Example Use Cases
   
@@ -132,7 +132,7 @@ In this software, the administrative functions were specifically designed to be 
 
 Illustration:
 
-![@changeBefore](https://i.ibb.co/Nr5bkyr/Screen-Recording-2024-05-25-at-2.gif)
+![Admin usage of API and CLI](https://i.ibb.co/VYrRhXK/api-2terminals.gif)
 
   ### Usage
 
@@ -198,7 +198,7 @@ In the CLI:
   
   ### Rate Limiting
   
-  - **API Rate Limiting**: To prevent abuse and protect against denial-of-service attacks, the system limits the number of requests from a single IP address. The default limit is 100 requests per day and 10 requests per hour. (not realistic for a real-life deployement)
+  - **API Rate Limiting**: To prevent abuse and protect against denial-of-service attacks, the system limits the number of requests from a single IP address. The limit is currently set at 100 requests per day and 10 requests per hour. (not realistic for a real-life deployment)
 
   ### Data Validation
   
@@ -225,7 +225,11 @@ This project includes a complete suite of tests to ensure the correctness and re
   
   - **Authentication Testing**: Tests for the authentication process, including 2FA and rate limiting.
   - **Encryption Testing**: Tests for data encryption and decryption to ensure sensitive data is protected.
-  
+
+Illustration:
+
+![pytest](https://i.ibb.co/PFCRTZy/tests.gif)
+
 
 ## Weaknesses and Potential Implementations:
   
