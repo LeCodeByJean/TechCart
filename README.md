@@ -5,6 +5,8 @@
   Student: Jean-G. De Souza
 </div>
 
+URL: https://github.com/LeCodeByJean/TechCart
+
 # TechCart 🛒
 
 <h6 align="left">Word Count: 1420 (excluding references and credits)</h6>
