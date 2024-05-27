@@ -15,7 +15,8 @@ TechCart is a simple e-commerce platform designed to offer users a secure shoppi
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
+- [Customer Usage](#customer-usage)
+- [Administrator Usage](#administrator-usage)
 - [Features](#features)
 - [Security Focus](#security-focus)
 - [Data Validation](#data-validation)
@@ -38,7 +39,7 @@ To install and run TechCart, follow these steps:
    ```
 
 
-## As a Customer:
+## Customer Usage:
 
 
   ### Run the Application:
@@ -105,7 +106,7 @@ This is a test with a GIF for demonstration of testing: @changeBefore
    - You can then choose `1. View our available items` to view the available products and their details.
 
 
-## As an Administrator:
+## Administrator Usage:
 
 Creating an API was a requirement for this project, and implementing it specifically for the inventory management system is a strategic decision that ensures scalability and future-proofing by preparing the system for future integration with Enterprise Resource Planning (ERP) systems like SAP or Oracle. The API allows for efficient interoperability between the inventory management system and external systems like an ERP. This not only facilitates automation and real-time data synchronization but also enables the app to easily adapt to evolving business needs.
 
