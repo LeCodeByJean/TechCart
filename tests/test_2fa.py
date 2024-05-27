@@ -18,7 +18,7 @@ def caplog_info_level(caplog):
     return caplog
 
 def test_send_security_code(caplog_info_level):
-    email = "test@example.com"
+    email = "user@email.com"
     code = generate_security_code()
     send_security_code(email, code)
     

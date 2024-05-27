@@ -9,10 +9,10 @@ def test_generate_salt():
     salt = generate_salt()
     assert isinstance(salt, str)
     assert len(salt) == 32  # UUID4 hex string length is 32
-
+#"secure_password"
 def test_hash_password():
     salt = generate_salt()
-    password = "secure_password"
+    password = "Aa12345!"
     hashed_password = hash_password(password, salt)
     
     assert isinstance(hashed_password, str)
@@ -20,7 +20,7 @@ def test_hash_password():
 
 def test_check_password():
     salt = generate_salt()
-    password = "secure_password"
+    password = "Aa12345!"
     hashed_password = hash_password(password, salt)
     
     # Correct password
@@ -30,7 +30,7 @@ def test_check_password():
     assert check_password(hashed_password, salt, "wrong_password") is False
 
 def test_hashing_same_password_different_salts():
-    password = "secure_password"
+    password = "Aa12345!"
     salt1 = generate_salt()
     salt2 = generate_salt()
     
@@ -41,8 +41,8 @@ def test_hashing_same_password_different_salts():
 
 def test_hashing_different_passwords_same_salt():
     salt = generate_salt()
-    password1 = "secure_password1"
-    password2 = "secure_password2"
+    password1 = "Aa12345!1"
+    password2 = "Aa12345!2"
     
     hashed_password1 = hash_password(password1, salt)
     hashed_password2 = hash_password(password2, salt)

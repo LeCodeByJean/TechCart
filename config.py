@@ -14,6 +14,6 @@ class Config:
     DEBUG = os.environ.get('DEBUG', 'True') == 'True'
     LOG_FILE = os.environ.get('LOG_FILE', 'logs/techcart.log')
     PAYMENT_KEY_PATH = os.environ.get('PAYMENT_KEY_PATH', 'path_to_payment_key')
-    RATE_LIMIT = os.environ.get('RATE_LIMIT', '200 per day;50 per hour') #  Rate limit for API requests
+    RATE_LIMIT = os.environ.get('RATE_LIMIT', '100 per day;10 per hour') #  Rate limit for API requests
 
 

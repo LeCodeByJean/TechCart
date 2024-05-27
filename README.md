@@ -196,7 +196,7 @@ In the CLI:
   
   ### Rate Limiting
   
-  - **API Rate Limiting**: To prevent abuse and protect against denial-of-service attacks, the system limits the number of requests from a single IP address. The default limit is 200 requests per day and 50 requests per hour.
+  - **API Rate Limiting**: To prevent abuse and protect against denial-of-service attacks, the system limits the number of requests from a single IP address. The default limit is 100 requests per day and 10 requests per hour. (not realistic for a real-life deployement)
 
   ### Data Validation
   
