@@ -24,7 +24,6 @@ from data.order import Order
 from data.order_db import add_order, update_order
 from data.shopping_cart import view_cart, clear_cart
 from data.product_db import get_product, update_product
-#from services.payment_process import process_payment
 
 # Set up logging
 logger = setup_logger('order_process_log')
