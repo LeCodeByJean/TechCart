@@ -7,7 +7,7 @@
 
 # TechCart 🛒
 
-<h6 align="left">Word Count: xxxx</h6>
+<h6 align="left">Word Count: 1420 (excluding references and credits)</h6>
 
 TechCart is a simple e-commerce platform designed to offer users a secure shopping experience. This application includes features such as user registration, login, guest browsing (no account needed), shopping cart management, payment, and order placement. TechCart also includes an API for inventory management, allowing administrators to create, read, update, and delete (CRUD) products. It was developed with an emphasis on security, data validation, and thorough testing to ensure reliability and robustness.
 
