@@ -24,24 +24,21 @@ from data.order import Order
 from data.order_db import add_order, update_order
 from data.shopping_cart import view_cart, clear_cart
 from data.product_db import get_product, update_product
-from services.payment_process import process_payment
+#from services.payment_process import process_payment
 
 # Set up logging
 logger = setup_logger('order_process_log')
 
-def create_order(user_id):
+def create_order(user_id, payment_status):
     """
     Create an order for the given user ID.
 
     Args:
         user_id (int): The ID of the user.
+        payment_status (str): The status of the payment, either "approved" or "declined".
 
     Returns:
         dict: A dictionary representing the order details.
-
-    Raises:
-        None
-
     """
     logger.info("--------we are in order_process.create_order--------")
 
@@ -63,9 +60,6 @@ def create_order(user_id):
 
     # Calculate the total amount of the order
     total_amount = calculate_total_amount(cart)
-
-    # Process payment
-    payment_status = process_payment()
 
     # Handle payment status
     if payment_status == "declined":

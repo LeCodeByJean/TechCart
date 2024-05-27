@@ -55,17 +55,6 @@ user_state = {
 storage = {}
 auth_service = AuthenticationService(storage)
 
-# Set up logging
-logger = setup_logger('main_log')
-
-# Global state to store logged in user's ID
-user_state = {
-    "logged_in_user": None
-}
-
-# Initialize storage and authentication service
-storage = {}
-auth_service = AuthenticationService(storage)
 
 @click.group(invoke_without_command=True)
 def cli():
@@ -356,13 +345,15 @@ def checkout(guest=False):
     """
     logger.info("--------we are in main.checkout--------") # Log the checkout process
     user_id = "guest" if guest else user_state["logged_in_user"]
-    order = create_order(user_id)
-
+    
     payment_status = process_payment()
     logger.debug("bool payment approved: %s", payment_status == "approved")
+    
+    order = create_order(user_id, payment_status)
+    
     if order and (payment_status == "approved"):
         click.echo(f"Order created successfully. Order ID: {order['order_id']}")
-        click.echo("Thank you for shopping with us! You order will arrive soon. Maybe.")
+        click.echo("Thank you for shopping with us! Your order will arrive soon. Maybe.")
         return
     else:
         click.echo("Payment declined. Order not placed.")
