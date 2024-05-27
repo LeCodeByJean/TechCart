@@ -320,7 +320,7 @@ def view_cart_menu(guest=False):
         else:
             click.echo("Invalid choice. Please try again.")
 
-def remove_from_cart(guest=False):
+def remove_from_cart(guest=''):
     """
     Remove an item from the user's cart.
 

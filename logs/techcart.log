@@ -1,0 +1,203 @@
+2024-05-27 03:48:13,051 - product_db_log - WARNING - Product not found with SKU: 123
+2024-05-27 03:48:13,051 - inventory_api_log - WARNING - Product not found for SKU: 123
+2024-05-27 03:48:27,927 - product_log - DEBUG - Product instance created with SKU: 72088cd4-6852-4e5e-8bbb-96662553a766
+2024-05-27 03:48:27,927 - product_log - DEBUG - New Product created with SKU: 72088cd4-6852-4e5e-8bbb-96662553a766
+2024-05-27 03:48:27,927 - product_db_log - DEBUG - Product added with SKU: 72088cd4-6852-4e5e-8bbb-96662553a766, Name: Test
+2024-05-27 03:48:27,927 - inventory_api_log - INFO - Successfully created a new product with SKU: 72088cd4-6852-4e5e-8bbb-96662553a766
+2024-05-27 03:50:01,877 - product_log - DEBUG - Product instance created with SKU: bb73d1f3-e1c5-44a1-bdb6-3d4238af5331
+2024-05-27 03:50:01,877 - product_log - DEBUG - New Product created with SKU: bb73d1f3-e1c5-44a1-bdb6-3d4238af5331
+2024-05-27 03:50:01,878 - product_db_log - DEBUG - Product added with SKU: bb73d1f3-e1c5-44a1-bdb6-3d4238af5331, Name: Test
+2024-05-27 03:50:01,878 - inventory_api_log - INFO - Successfully created a new product with SKU: bb73d1f3-e1c5-44a1-bdb6-3d4238af5331
+2024-05-27 03:58:56,165 - authentication_process_log - DEBUG - Attempting to authenticate user: qwe
+2024-05-27 03:58:56,165 - user_db_log - WARNING - User not found: qwe
+2024-05-27 03:58:56,165 - authentication_process_log - WARNING - User not found: qwe
+2024-05-27 03:59:14,384 - authentication_process_log - DEBUG - Attempting to register user with username: Jean, email: test@, role: customer
+2024-05-27 03:59:14,384 - authentication_process_log - ERROR - Invalid email format: test@
+2024-05-27 03:59:29,422 - authentication_process_log - DEBUG - Attempting to register user with username: Jean, email: jean@g.com, role: customer
+2024-05-27 03:59:29,422 - user_log - DEBUG - Validating password strength: Jean
+2024-05-27 03:59:29,423 - user_log - ERROR - Password validation failed. Password not strong enough: Length: 4, Has Digit: False, Has Lowercase: True, Has Uppercase: True, Has Special Char: False
+2024-05-27 03:59:29,423 - authentication_process_log - ERROR - Password validation failed for user: Jean
+2024-05-27 03:59:45,865 - authentication_process_log - DEBUG - Attempting to register user with username: Jean, email: jean@g.com, role: customer
+2024-05-27 03:59:45,865 - user_log - DEBUG - Validating password strength: JeanJean2@
+2024-05-27 03:59:45,894 - user_db_log - INFO - User added successfully: Jean
+2024-05-27 03:59:45,894 - authentication_process_log - INFO - Registered new user with username: Jean
+2024-05-27 04:00:04,251 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:00:04,251 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:00:04,252 - user_db_log - INFO - User updated Jean: cart -> {'4db99f54-fadd-4bb7-a49d-db419beded14': 3}
+2024-05-27 04:00:04,252 - shopping_cart_log - INFO - Added 3 of product 4db99f54-fadd-4bb7-a49d-db419beded14 to cart
+2024-05-27 04:00:09,509 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:00:09,509 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:00:14,256 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:00:14,256 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:00:14,256 - order_process_log - INFO - --------we are in order_process.create_order--------
+2024-05-27 04:00:14,257 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:00:14,257 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:00:14,257 - payment_process_log - INFO - --------we are in payment_process.process_payment--------
+2024-05-27 04:00:18,767 - payment_process_log - ERROR - Invalid card number
+2024-05-27 04:00:18,767 - order_log - INFO - Order instance created with Order ID: 42010345-a6ef-401d-948e-a8afff45b5ed
+2024-05-27 04:00:18,768 - order_db_log - INFO - Order added with Order ID: 42010345-a6ef-401d-948e-a8afff45b5ed
+2024-05-27 04:00:18,768 - order_process_log - WARNING - Order declined for user ID: Jean
+2024-05-27 04:00:18,768 - payment_process_log - INFO - --------we are in payment_process.process_payment--------
+2024-05-27 04:00:44,224 - payment_process_log - ERROR - Card is expired (year). Year of the card: 2022, current year: 2024
+2024-05-27 04:00:44,224 - main_log - DEBUG - bool payment approved: False
+2024-05-27 04:00:44,224 - main_log - DEBUG - bool payment approved: False
+2024-05-27 04:00:44,225 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:00:44,225 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:00:56,701 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:00:56,701 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:00:56,702 - order_process_log - INFO - --------we are in order_process.create_order--------
+2024-05-27 04:00:56,702 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:00:56,702 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:00:56,702 - payment_process_log - INFO - --------we are in payment_process.process_payment--------
+2024-05-27 04:01:10,821 - payment_process_log - INFO - Payment processed successfully
+2024-05-27 04:01:10,821 - order_log - INFO - Order instance created with Order ID: ad63a8cb-a6f3-414d-9e20-3692b165361c
+2024-05-27 04:01:10,821 - order_process_log - DEBUG - we are in order_process.create_order - payment_status == approved
+2024-05-27 04:01:10,821 - order_db_log - INFO - Order added with Order ID: ad63a8cb-a6f3-414d-9e20-3692b165361c
+2024-05-27 04:01:10,821 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:01:10,821 - user_db_log - INFO - User updated Jean: cart -> {}
+2024-05-27 04:01:10,822 - shopping_cart_log - INFO - Cleared all items from cart
+2024-05-27 04:01:10,822 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:01:10,822 - product_db_log - INFO - Product updated with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14, Updated fields: stock
+2024-05-27 04:01:10,822 - order_process_log - INFO - Updated stock for product ID 4db99f54-fadd-4bb7-a49d-db419beded14: new stock level is 97
+2024-05-27 04:01:10,822 - order_process_log - INFO - Order created and cart cleared for user ID: Jean
+2024-05-27 04:01:10,822 - payment_process_log - INFO - --------we are in payment_process.process_payment--------
+2024-05-27 04:06:38,396 - authentication_process_log - DEBUG - Attempting to register user with username: Jean, email: jean@2.com, role: customer
+2024-05-27 04:06:38,397 - user_log - DEBUG - Validating password strength: JeanJean@2
+2024-05-27 04:06:38,425 - user_db_log - INFO - User added successfully: Jean
+2024-05-27 04:06:38,425 - authentication_process_log - INFO - Registered new user with username: Jean
+2024-05-27 04:06:50,810 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:06:50,810 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:06:50,810 - user_db_log - INFO - User updated Jean: cart -> {'4db99f54-fadd-4bb7-a49d-db419beded14': 3}
+2024-05-27 04:06:50,810 - shopping_cart_log - INFO - Added 3 of product 4db99f54-fadd-4bb7-a49d-db419beded14 to cart
+2024-05-27 04:06:57,888 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:06:57,889 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:07:00,835 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:07:00,835 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:07:00,835 - order_process_log - INFO - --------we are in order_process.create_order--------
+2024-05-27 04:07:00,835 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:07:00,835 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:07:00,835 - payment_process_log - INFO - --------we are in payment_process.process_payment--------
+2024-05-27 04:07:07,203 - payment_process_log - ERROR - Invalid card number
+2024-05-27 04:07:07,203 - order_log - INFO - Order instance created with Order ID: 62a8540a-5890-4d87-b679-62599d5cfc4e
+2024-05-27 04:07:07,203 - order_db_log - INFO - Order added with Order ID: 62a8540a-5890-4d87-b679-62599d5cfc4e
+2024-05-27 04:07:07,204 - order_process_log - WARNING - Order declined for user ID: Jean
+2024-05-27 04:07:07,204 - payment_process_log - INFO - --------we are in payment_process.process_payment--------
+2024-05-27 04:07:25,065 - payment_process_log - INFO - Payment processed successfully
+2024-05-27 04:07:25,065 - main_log - DEBUG - bool payment approved: True
+2024-05-27 04:07:25,065 - main_log - DEBUG - bool payment approved: True
+2024-05-27 04:07:25,066 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:07:25,066 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:08:50,777 - authentication_process_log - DEBUG - Attempting to register user with username: Jean, email: jean@2.com, role: customer
+2024-05-27 04:08:50,777 - user_log - DEBUG - Validating password strength: JeanJean2@
+2024-05-27 04:08:50,806 - user_db_log - INFO - User added successfully: Jean
+2024-05-27 04:08:50,806 - authentication_process_log - INFO - Registered new user with username: Jean
+2024-05-27 04:09:02,227 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:09:02,227 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:09:02,228 - user_db_log - INFO - User updated Jean: cart -> {'4db99f54-fadd-4bb7-a49d-db419beded14': 1}
+2024-05-27 04:09:02,228 - shopping_cart_log - INFO - Added 1 of product 4db99f54-fadd-4bb7-a49d-db419beded14 to cart
+2024-05-27 04:09:06,704 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:09:06,705 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:09:12,015 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:09:12,015 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:09:12,015 - order_process_log - INFO - --------we are in order_process.create_order--------
+2024-05-27 04:09:12,015 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:09:12,016 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:09:12,016 - payment_process_log - INFO - --------we are in payment_process.process_payment--------
+2024-05-27 04:09:18,056 - payment_process_log - ERROR - Invalid card number
+2024-05-27 04:09:18,057 - order_log - INFO - Order instance created with Order ID: 181336b9-de42-47a3-9ce9-4abcdc316b3d
+2024-05-27 04:09:18,058 - order_db_log - INFO - Order added with Order ID: 181336b9-de42-47a3-9ce9-4abcdc316b3d
+2024-05-27 04:09:18,059 - order_process_log - WARNING - Order declined for user ID: Jean
+2024-05-27 04:09:18,060 - payment_process_log - INFO - --------we are in payment_process.process_payment--------
+2024-05-27 04:09:35,455 - payment_process_log - INFO - Payment processed successfully
+2024-05-27 04:09:35,456 - main_log - DEBUG - bool payment approved: True
+2024-05-27 04:09:35,456 - main_log - DEBUG - bool payment approved: True
+2024-05-27 04:09:35,456 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:09:35,456 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:10:01,301 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:10:01,302 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:10:37,865 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:10:37,865 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:10:37,866 - order_process_log - INFO - --------we are in order_process.create_order--------
+2024-05-27 04:10:37,866 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:10:37,866 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:10:37,866 - payment_process_log - INFO - --------we are in payment_process.process_payment--------
+2024-05-27 04:10:58,329 - payment_process_log - INFO - Payment processed successfully
+2024-05-27 04:10:58,330 - order_log - INFO - Order instance created with Order ID: b9403fc7-7353-4fc2-82a5-24103f7d2be6
+2024-05-27 04:10:58,330 - order_process_log - DEBUG - we are in order_process.create_order - payment_status == approved
+2024-05-27 04:10:58,330 - order_db_log - INFO - Order added with Order ID: b9403fc7-7353-4fc2-82a5-24103f7d2be6
+2024-05-27 04:10:58,330 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:10:58,330 - user_db_log - INFO - User updated Jean: cart -> {}
+2024-05-27 04:10:58,330 - shopping_cart_log - INFO - Cleared all items from cart
+2024-05-27 04:10:58,330 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:10:58,330 - product_db_log - INFO - Product updated with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14, Updated fields: stock
+2024-05-27 04:10:58,330 - order_process_log - INFO - Updated stock for product ID 4db99f54-fadd-4bb7-a49d-db419beded14: new stock level is 99
+2024-05-27 04:10:58,330 - order_process_log - INFO - Order created and cart cleared for user ID: Jean
+2024-05-27 04:10:58,331 - payment_process_log - INFO - --------we are in payment_process.process_payment--------
+2024-05-27 04:11:07,499 - payment_process_log - ERROR - Missing cardholder name
+2024-05-27 04:11:07,499 - main_log - DEBUG - bool payment approved: False
+2024-05-27 04:11:07,499 - main_log - DEBUG - bool payment approved: False
+2024-05-27 04:11:07,500 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:17:06,664 - authentication_process_log - DEBUG - Attempting to register user with username: Jean, email: jean2@2.co, role: customer
+2024-05-27 04:17:06,664 - user_log - DEBUG - Validating password strength: Jean2@jean
+2024-05-27 04:17:06,701 - user_db_log - INFO - User added successfully: Jean
+2024-05-27 04:17:06,702 - authentication_process_log - INFO - Registered new user with username: Jean
+2024-05-27 04:17:27,811 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:17:27,812 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:17:27,812 - user_db_log - INFO - User updated Jean: cart -> {'4db99f54-fadd-4bb7-a49d-db419beded14': 1}
+2024-05-27 04:17:27,812 - shopping_cart_log - INFO - Added 1 of product 4db99f54-fadd-4bb7-a49d-db419beded14 to cart
+2024-05-27 04:17:44,389 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:17:44,389 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:17:48,646 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:17:48,646 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:17:48,647 - order_process_log - INFO - --------we are in order_process.create_order--------
+2024-05-27 04:17:48,647 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:17:48,647 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:17:48,647 - payment_process_log - INFO - --------we are in payment_process.process_payment--------
+2024-05-27 04:18:20,896 - payment_process_log - INFO - Payment processed successfully
+2024-05-27 04:18:20,897 - order_log - INFO - Order instance created with Order ID: 57fee43b-1a96-42db-ad4a-ad1be99d14e4
+2024-05-27 04:18:20,897 - order_process_log - DEBUG - we are in order_process.create_order - payment_status == approved
+2024-05-27 04:18:20,897 - order_db_log - INFO - Order added with Order ID: 57fee43b-1a96-42db-ad4a-ad1be99d14e4
+2024-05-27 04:18:20,897 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:18:20,897 - user_db_log - INFO - User updated Jean: cart -> {}
+2024-05-27 04:18:20,897 - shopping_cart_log - INFO - Cleared all items from cart
+2024-05-27 04:18:20,897 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:18:20,898 - product_db_log - INFO - Product updated with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14, Updated fields: stock
+2024-05-27 04:18:20,898 - order_process_log - INFO - Updated stock for product ID 4db99f54-fadd-4bb7-a49d-db419beded14: new stock level is 99
+2024-05-27 04:18:20,898 - order_process_log - INFO - Order created and cart cleared for user ID: Jean
+2024-05-27 04:18:20,898 - payment_process_log - INFO - --------we are in payment_process.process_payment--------
+2024-05-27 04:28:33,787 - payment_process_log - ERROR - Invalid card number
+2024-05-27 04:28:33,788 - main_log - DEBUG - bool payment approved: False
+2024-05-27 04:28:33,788 - main_log - DEBUG - bool payment approved: False
+2024-05-27 04:28:33,788 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:28:49,640 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:28:49,641 - user_db_log - INFO - User updated Jean: cart -> {}
+2024-05-27 04:28:49,642 - shopping_cart_log - INFO - Cleared all items from cart
+2024-05-27 04:28:49,642 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:29:11,071 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:29:11,071 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:29:11,072 - user_db_log - INFO - User updated Jean: cart -> {'4db99f54-fadd-4bb7-a49d-db419beded14': 1}
+2024-05-27 04:29:11,072 - shopping_cart_log - INFO - Added 1 of product 4db99f54-fadd-4bb7-a49d-db419beded14 to cart
+2024-05-27 04:29:15,420 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:29:15,421 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:29:36,377 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:29:36,377 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:29:36,378 - order_process_log - INFO - --------we are in order_process.create_order--------
+2024-05-27 04:29:36,378 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:29:36,379 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:29:36,379 - payment_process_log - INFO - --------we are in payment_process.process_payment--------
+2024-05-27 04:31:21,020 - authentication_process_log - DEBUG - Attempting to register user with username: Jean, email: jean@2.com, role: customer
+2024-05-27 04:31:21,021 - user_log - DEBUG - Validating password strength: JeanJean2@
+2024-05-27 04:31:21,052 - user_db_log - INFO - User added successfully: Jean
+2024-05-27 04:31:21,053 - authentication_process_log - INFO - Registered new user with username: Jean
+2024-05-27 04:31:31,054 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:31:31,054 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:31:31,054 - user_db_log - INFO - User updated Jean: cart -> {'4db99f54-fadd-4bb7-a49d-db419beded14': 2}
+2024-05-27 04:31:31,055 - shopping_cart_log - INFO - Added 2 of product 4db99f54-fadd-4bb7-a49d-db419beded14 to cart
+2024-05-27 04:31:35,738 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:31:35,738 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:31:40,980 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:31:40,980 - main_log - INFO - --------we are in main.checkout--------
+2024-05-27 04:31:40,980 - order_process_log - INFO - --------we are in order_process.create_order--------
+2024-05-27 04:31:40,980 - user_db_log - INFO - User retrieved: Jean
+2024-05-27 04:31:40,981 - product_db_log - INFO - Product retrieved with SKU: 4db99f54-fadd-4bb7-a49d-db419beded14
+2024-05-27 04:31:40,981 - payment_process_log - INFO - --------we are in payment_process.process_payment--------

@@ -76,7 +76,7 @@ def create_order(user_id):
         return order.to_dict()
     elif payment_status == "approved":
         order = Order(user_id, items, total_amount, status="completed")
-        logger.debug("we are in order_process.create_order - payment_status == approved")
+        logger.debug("-----we are in order_process.create_order - payment_status == approved-----")
         add_order(order)
         clear_cart(user_id)
         update_stock(items)
