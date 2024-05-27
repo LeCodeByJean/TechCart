@@ -154,7 +154,7 @@ In the CLI:
    - Run the CLI as instructed above.
    - Select the option to view all products by entering `1` when prompted.
 
-   The CLI will display all products with details such as SKU, name, description, price, and stock quantity.
+   The CLI will display all products with details such as Stock Keeping Unit (SKU), name, description, price, and stock quantity.
 
 Using a Web Browser:
    - Open your web browser.
@@ -171,7 +171,7 @@ To update an item using the CLI, follow these steps:
 In the CLI:
    - Run the CLI as instructed above.
    - Select the option to update a product by entering `4` when prompted.
-   - Enter the Stock Keeping Unit (SKU) of the product you wish to update.
+   - Enter the SKU of the product you wish to update.
    - The current product details will be displayed.
    - Enter the new product details when prompted (leave fields blank to keep current values).
 
@@ -192,7 +192,7 @@ In the CLI:
   
   ### Two-Factor Authentication (2FA)
   
-  - **Conditional 2FA**: After three failed login attempts, the system requires users to enter a security code sent to their email. This adds an additional layer of security against unauthorized access.
+  - **Conditional 2FA**: After three failed login attempts, the system requires users to enter a security code sent to their email. This adds an additional layer of security against unauthorized access. According to recent research (Doerfler et al., 2019), delegation-based two-factor authentications are highly effective, preventing all automated bot attacks and over 92% of phishing-related attacks.
   
   ### Rate Limiting
   
@@ -279,6 +279,7 @@ TechCart is a robust and secure e-commerce platform designed to provide users wi
 
 Ebanesar, T. and Suganthi, G. (2019). Improving Login Process by Salted Hashing Password Using SHA-256 Algorithm in Web Applications. International Journal of Computer Sciences and Engineering, 7(3), pp.27–32. doi:https://doi.org/10.26438/ijcse/v7i3.2732.
 
+Doerfler, P., Thomas, K., Marincenko, M., Ranieri, J., Jiang, Y., Moscicki, A. and McCoy, D. (2019). Evaluating Login Challenges as aDefense against Account Takeover. The World Wide Web Conference on   - WWW ’19. doi:https://doi.org/10.1145/3308558.3313481.
 
 ## credits
 
