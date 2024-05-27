@@ -1,4 +1,4 @@
-<div style="text-align: right;">
+<div style="text-align: left;">
   University of Essex Online<br>
   Module: Secure Software Development (SSD)<br>
   Tutor: Dr Cathryn Peoples<br>
