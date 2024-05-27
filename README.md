@@ -63,7 +63,7 @@ TechCart offers a command-line interface (CLI) for users to interact with the pl
 - Placing an order
 - Paying (simulation)
 
-This is a test with a GIF for demonstration of testing: @changeBefore
+Illustration:
 
 ![@changeBefore](https://i.ibb.co/Nr5bkyr/Screen-Recording-2024-05-25-at-2.gif)
 
@@ -108,7 +108,7 @@ This is a test with a GIF for demonstration of testing: @changeBefore
 
 ## Administrator Usage:
 
-Creating an API was a requirement for this project, and implementing it specifically for the inventory management system is a strategic decision that ensures scalability and future-proofing by preparing the system for future integration with Enterprise Resource Planning (ERP) systems like SAP or Oracle. The API allows for efficient interoperability between the inventory management system and external systems like an ERP. This not only facilitates automation and real-time data synchronization but also enables the app to easily adapt to evolving business needs.
+In this software, the administrative functions were specifically designed to be managed entirely through an API. Creating an API was a requirement for this project, but implementing it specifically for the inventory management system is a strategic decision that ensures scalability and future-proofing by preparing the system for future integration with Enterprise Resource Planning (ERP) systems like SAP or Oracle. The API allows for efficient interoperability between the inventory management system and external systems like an ERP. This not only facilitates automation and real-time data synchronization but also enables the app to easily adapt to evolving business needs.
 
   ### Run the Application:
   
@@ -128,6 +128,10 @@ Creating an API was a requirement for this project, and implementing it specific
   
   Note: The terminal with the flask server must remain open while using CLI.
 
+Illustration:
+
+![@changeBefore](https://i.ibb.co/Nr5bkyr/Screen-Recording-2024-05-25-at-2.gif)
+
   ### Usage
 
 The inventory management CLI provides a simple interface for administrators to manage the inventory using the API endpoints. This CLI allows you to perform various actions:
@@ -140,57 +144,55 @@ The inventory management CLI provides a simple interface for administrators to m
 
 The CLI interacts with the API endpoints using the `requests` library, sending and receiving data in JSON format. The base URL for the API is `http://127.0.0.1:5000/api`.
 
-This is a test with a GIF for demonstration of testing: @changeBefore
-
-![@changeBefore](https://i.ibb.co/Nr5bkyr/Screen-Recording-2024-05-25-at-2.gif)
-
 ### Example Use Cases
 
+**Viewing All Available Items**
+
+To view all available items, follow these steps:
+
+In the CLI:
+   - Run the CLI as instructed above.
+   - Select the option to view all products by entering `1` when prompted.
+
+   The CLI will display all products with details such as SKU, name, description, price, and stock quantity.
+
+Using a Web Browser:
+   - Open your web browser.
+   - Enter the following URL:
+     ```
+     http://127.0.0.1:5000/api/products
+     ```
+   This will display a JSON list of all products available in the inventory.
+
+**Updating an Item**
+
+To update an item using the CLI, follow these steps:
+
+In the CLI:
+   - Run the CLI as instructed above.
+   - Select the option to update a product by entering `4` when prompted.
+   - Enter the Stock Keeping Unit (SKU) of the product you wish to update.
+   - The current product details will be displayed.
+   - Enter the new product details when prompted (leave fields blank to keep current values).
+
+   The CLI will send a request to update the product, and a response will be displayed indicating the success or failure of the operation.
 
 
+## Security Features
 
-
-
-
-
-## Features
-
-  ### User Authentication
+  ### Data Encryption
   
-  - **Registration**: Users can create a new account by providing a username, email, and password. The system enforces strong password policies and validates email formats.
-  - **Login**: Existing users can log in using their credentials. The system includes security measures like rate limiting and two-factor authentication (2FA) after multiple failed login attempts.
-  
-  ### Product Management
-  
-  - **Browse Products**: Users can browse available products, view details, and add items to their cart.
-  - **Add to Cart**: Users can add selected products to their shopping cart, specifying the quantity.
-  - **View Cart**: Users can view the items in their cart, update quantities, or remove items.
-  - **Checkout**: Users can proceed to checkout, where the system calculates the total amount and processes the payment.
-  
-  ### Order Management
-  
-  - **Order Creation**: When a user places an order, the system creates an order record, processes the payment, and updates stock quantities.
-  - **Order Tracking**: Users can view the status of their orders and receive updates as the status changes.
-  
-
-
-## Security Focus
-
-TechCart implements several security features to protect user data and ensure secure transactions:
+  - **Symmetric Encryption**: Sensitive user data, such as email addresses and keys, are encrypted using the Fernet symmetric encryption algorithm. The system uses a master key to encrypt and decrypt user keys, providing an additional layer of security.
 
   ### Password Management
   
-  - **Salted Password Hashing**: Passwords are hashed using SHA-256 with a unique salt for each user. This prevents attackers from using precomputed hashes to crack passwords. The use of salt in password encryption significantly enhances security by mitigating the risk of precomputed hash attacks, such as dictionary attacks. Salt adds random data to the passwords before hashing, increasing the complexity and uniqueness of the encrypted passwords. This method ensures that even if the same password is used by different users, the resulting hash values will be different, making it harder for attackers to crack the passwords (Ebanesar & Suganthi, 2019).
-  - 
-  - **Strong Password Requirements**: Passwords must be at least 8 characters long and include a mix of upper and lower case letters, digits, and special characters.
+  - **Salted Password Hashing**: Passwords are hashed using SHA-256 with a unique salt for each user. Salt adds random data to the passwords before hashing, increasing the complexity and uniqueness of the encrypted passwords. The use of salt in password encryption significantly enhances security by mitigating the risk of precomputed hash attacks, such as dictionary attacks. This method ensures that even if the same password is used by different users, the resulting hash values will be different, making it harder for attackers to crack the passwords (Ebanesar & Suganthi, 2019).
+
+  - **Strong Password Requirements**: Password requirements follow the "8, 4 rule" (a minimum of 8 characters that must include lowercase letters, uppercase letters, digits, and special characters).
   
   ### Two-Factor Authentication (2FA)
   
   - **Conditional 2FA**: After three failed login attempts, the system requires users to enter a security code sent to their email. This adds an additional layer of security against unauthorized access.
-  
-  ### Data Encryption
-  
-  - **Symmetric Encryption**: Sensitive user data, such as email addresses and keys, are encrypted using the Fernet symmetric encryption algorithm. The system uses a master key to encrypt and decrypt user keys, providing an additional layer of security.
   
   ### Rate Limiting
   
