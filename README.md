@@ -2,8 +2,10 @@
   University of Essex Online<br>
   Module: Secure Software Development (SSD)<br>
   Tutor: Dr Cathryn Peoples<br>
-  Student: Jean-G. De Souza
+  Student: Jean-G. De Souza<br>
 </div>
+
+Repository URL: https://github.com/LeCodeByJean/TechCart
 
 # TechCart 🛒
 
